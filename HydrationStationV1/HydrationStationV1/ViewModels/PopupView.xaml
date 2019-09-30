@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HydrationStationV1.PopupView"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    
+    <StackLayout Margin="12"
+                 Padding="24"
+                 BackgroundColor="White"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center">
+        <Label 
+               Text="Select Amount"
+               HorizontalOptions="Center"/>
+        <Label x:Name="yeet"
+               
+               HorizontalOptions="Center"/>
+        <StackLayout
+            Orientation="Horizontal">
+
+            <ImageButton Source="https://puu.sh/EmZE5/9a41ab5b90.png"
+                         Clicked="pop1"/>
+
+            <ImageButton Source="https://puu.sh/EmZEp/a512b25a49.png"
+                         Clicked="pop2"/>
+
+            <ImageButton Source="https://puu.sh/EmZEA/08e57d8d72.png"
+                         Clicked="pop3"/>
+            </StackLayout>
+
+        <Label Text="or"
+               HorizontalOptions="Center"/>
+       
+        <StackLayout>
+
+            
+            
+            <Entry x:Name="Amount"
+         Placeholder="Enter Amount"
+         TextColor="Black"
+         VerticalOptions="CenterAndExpand"
+         HorizontalOptions="Center"
+         WidthRequest="250" />
+            
+        </StackLayout>
+        
+        <Button BackgroundColor="DodgerBlue"
+                Clicked="enter"
+                FontSize="30"
+                Text="Enter"
+                TextColor="White" />
+    </StackLayout>
+</pages:PopupPage>

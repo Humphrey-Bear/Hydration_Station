@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HydrationStationV1.HomePage"
+             BackgroundColor="White"
+             >
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="2*" />
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Hydration station" BackgroundColor="#0099FF"
+               Grid.ColumnSpan="4"
+               FontSize="20"
+               FontAttributes="Italic"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+
+        <Label 
+               x:Name="yee"
+               Text="{Binding WaterIntake}"
+               FontSize="Large"
+
+               Grid.Row="2"
+               HorizontalOptions="Center"
+               Grid.ColumnSpan="2"  
+               />
+        <Label Text="of"
+               FontSize="Medium"
+             
+               TextColor="#8a8484"
+               Grid.Row="2"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"  
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+        <Label Text="2000"
+               FontSize="Large"
+               Grid.Row="2"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"  
+               HorizontalOptions="Center"
+               />
+        <Image Source="https://puu.sh/Eitqe/a656c3ac41.jpg"
+               Grid.Row="1"
+               Grid.ColumnSpan="2"/>
+        <Image Source="https://puu.sh/Eits1/aeeea72a04.jpg"
+               Grid.Row="1"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"/>
+        <ProgressBar Progress="0.7" 
+                     ProgressColor="Gray"
+                     BackgroundColor="LightGray"
+                     Grid.Row="3"
+                     Grid.ColumnSpan="4"
+                     Scale="0.8"
+                  
+/>
+        <Label 
+               Text="2"
+               TextColor="#0099FF"
+               Grid.Row="5"
+               BackgroundColor="#0099FF"
+               Grid.ColumnSpan="4"  
+               HorizontalTextAlignment="Center"
+               />
+        <Label 
+               Text="2"
+               TextColor="#0099FF"
+               Grid.Row="4"
+               BackgroundColor="#0099FF"
+               Grid.ColumnSpan="4"  
+               HorizontalTextAlignment="Center"
+               />
+        <ImageButton Source="https://puu.sh/EmhQQ/b89a21e008.png"
+                    BackgroundColor="#0099FF"
+                     Grid.Row="4"
+                     Grid.Column="0"
+                    Clicked="image1"/>
+        <ImageButton Source="https://puu.sh/EmhNC/74a5d8d892.png"
+                    BackgroundColor="#0099FF"
+                    Grid.Row="4"
+                     Grid.Column="1"
+                    Clicked="image2" />
+        <ImageButton Source="https://puu.sh/EmhQx/f31e861685.png"
+                    BackgroundColor="#0099FF"
+                    Grid.Row="4"
+                     Grid.Column="2"
+                    Clicked="image3"/>
+        <ImageButton Source="https://puu.sh/Eisq6/b0d6545c8c.png"
+                    BackgroundColor="#0099FF"
+                    Grid.Row="4"
+                     Grid.Column="3"
+                    Clicked="image4"/>
+
+
+    </Grid>
+</ContentPage>

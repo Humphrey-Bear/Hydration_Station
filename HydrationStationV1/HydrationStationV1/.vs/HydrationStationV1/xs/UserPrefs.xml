@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+    <Files>
+      <File FileName="StatsPage.xaml.cs" Line="4" Column="7" />
+      <File FileName="HomePage.xaml.cs" />
+      <File FileName="StatsPage.xaml" />
+      <File FileName="App.xaml.cs" Line="13" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HydrationStationV1" expanded="True">
+            <Node name="HydrationStationV1" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
