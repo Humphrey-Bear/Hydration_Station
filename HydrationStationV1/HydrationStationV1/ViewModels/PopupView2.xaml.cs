@@ -19,6 +19,7 @@ namespace HydrationStationV1
         public PopupView2(WaterForDay waterIntakeForDay)
         {
             InitializeComponent();
+            this.waterIntakeForDay = waterIntakeForDay;
         }
 
         public async void pop1(object sender, EventArgs e)

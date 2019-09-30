@@ -1,26 +1,25 @@
 ﻿<Properties StartupConfiguration="{164C66BD-D3FF-45E5-9E7D-8DD0ADBCC846}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HydrationStationV1/Models/Volumn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HydrationStationV1/App.xaml.cs">
     <Files>
       <File FileName="HydrationStationV1/App.xaml" Line="1" Column="1" IsPinned="True" />
       <File FileName="HydrationStationV1/StatsPage.xaml" />
-      <File FileName="HydrationStationV1/StatsPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="HydrationStationV1/MainPage.xaml" Line="22" Column="56" />
-      <File FileName="HydrationStationV1/HomePage.xaml" Line="53" Column="42" />
-      <File FileName="HydrationStationV1/App.xaml.cs" />
-      <File FileName="HydrationStationV1/MainPage.xaml.cs" Line="24" Column="35" />
-      <File FileName="HydrationStationV1/HomePage.xaml.cs" Line="22" Column="35" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml" Line="7" Column="41" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml.cs" Line="17" Column="53" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml" Line="8" Column="43" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml.cs" Line="17" Column="35" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml" Line="7" Column="41" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml.cs" Line="34" Column="39" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml" Line="7" Column="41" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml.cs" Line="17" Column="35" />
-      <File FileName="HydrationStationV1.iOS/AppDelegate.cs" Line="26" Column="43" />
-      <File FileName="HydrationStationV1.Android/MainActivity.cs" Line="20" Column="45" />
-      <File FileName="HydrationStationV1/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="HydrationStationV1/Models/Volumn.cs" Line="9" Column="39" />
+      <File FileName="HydrationStationV1/StatsPage.xaml.cs" />
+      <File FileName="HydrationStationV1/MainPage.xaml" />
+      <File FileName="HydrationStationV1/HomePage.xaml" />
+      <File FileName="HydrationStationV1/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="HydrationStationV1/MainPage.xaml.cs" />
+      <File FileName="HydrationStationV1/HomePage.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml.cs" />
+      <File FileName="HydrationStationV1.iOS/AppDelegate.cs" />
+      <File FileName="HydrationStationV1.Android/MainActivity.cs" />
+      <File FileName="HydrationStationV1/AssemblyInfo.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +27,17 @@
           <Node name="HydrationStationV1" expanded="True">
             <Node name="HydrationStationV1" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="Properties" selected="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="PopupView.xaml" expanded="True" />
+                <Node name="PopupView1.xaml" expanded="True" />
+                <Node name="PopupView2.xaml" expanded="True" />
+                <Node name="PopupView3.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+              <Node name="HomePage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
