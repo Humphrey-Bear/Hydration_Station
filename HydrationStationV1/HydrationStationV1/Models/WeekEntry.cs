@@ -1,6 +1,7 @@
 ﻿using System;
 namespace HydrationStationV1.Models
 {
+
     public class WeekEntry
     {
         int weeklyIntake;
@@ -19,7 +20,7 @@ namespace HydrationStationV1.Models
         /// </summary>
         public WeekEntry()
         {
-
+            this.mondayIntake = 0;
         }
 
         /// <summary>
@@ -31,28 +32,29 @@ namespace HydrationStationV1.Models
         /// name of the day in lower case i.e. "monday"</param>
         public void updateIntakeForDay(int intakeForDay, string day)
         {
+
             switch (day)
             {
-                case "monday":
-                    mondayIntake += intakeForDay;
+                case "Monday":
+                    mondayIntake = intakeForDay;
                     break;
-                case "tuesday":
-                    tuesdayIntake += intakeForDay;
+                case "Tuesday":
+                    tuesdayIntake = intakeForDay;
                     break;
-                case "wednesday":
-                    wednesdayIntake += intakeForDay;
+                case "Wednesday":
+                    wednesdayIntake = intakeForDay;
                     break;
-                case "thursday":
-                    thursdayIntake += intakeForDay;
+                case "Thursday":
+                    thursdayIntake = intakeForDay;
                     break;
-                case "friday":
-                    fridayIntake += intakeForDay;
+                case "Friday":
+                    fridayIntake = intakeForDay;
                     break;
-                case "saturday":
-                    saturdayIntake += intakeForDay;
+                case "Saturday":
+                    saturdayIntake = intakeForDay;
                     break;
-                case "sunday":
-                    sundayIntake += intakeForDay;
+                case "Sunday":
+                    sundayIntake = intakeForDay;
                     break;
             }
         }

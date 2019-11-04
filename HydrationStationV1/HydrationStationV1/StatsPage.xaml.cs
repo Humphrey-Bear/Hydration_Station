@@ -18,18 +18,23 @@ namespace HydrationStationV1
         {
             InitializeComponent();
 
-            WeekEntry week = new WeekEntry();
-
             //Test data.
+            /*
             week.updateIntakeForDay(2075, "monday");
             week.updateIntakeForDay(1098, "tuesday");
             week.updateIntakeForDay(1453, "wednesday");
             week.updateIntakeForDay(2034, "thursday");
             week.updateIntakeForDay(1875, "friday");
             week.updateIntakeForDay(2000, "saturday");
-            week.updateIntakeForDay(1943, "sunday");
-            createBarChart(week);
+            week.updateIntakeForDay(1943, "sunday");*/
+            //createBarChart(GlobalVariables.weekEntry);
         }
+
+        protected override void OnAppearing()
+        {
+            createBarChart(GlobalVariables.weekEntry);
+        }
+
 
         /// <summary>
         /// Creates a bar chart for the week's entries to display on this

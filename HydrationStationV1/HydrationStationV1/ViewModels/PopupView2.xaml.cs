@@ -14,12 +14,10 @@ namespace HydrationStationV1
     public partial class PopupView2
     {
         public static int result2 { get; set; } = 0;
-        public WaterForDay waterIntakeForDay;
 
-        public PopupView2(WaterForDay waterIntakeForDay)
+        public PopupView2()
         {
             InitializeComponent();
-            this.waterIntakeForDay = waterIntakeForDay;
         }
 
         public async void pop1(object sender, EventArgs e)
@@ -27,8 +25,9 @@ namespace HydrationStationV1
             result2 += 250;
             string myString = result2.ToString();
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(250);
+            GlobalVariables.intakeForDay.updateIntake(250);
             await PopupNavigation.PopAsync(true);
+            HomePage.popupClosed();
         }
 
         public async void pop2(object sender, EventArgs e)
@@ -36,8 +35,9 @@ namespace HydrationStationV1
             result2 += 500;
             string myString = result2.ToString();
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(500);
+            GlobalVariables.intakeForDay.updateIntake(500);
             await PopupNavigation.PopAsync(true);
+            HomePage.popupClosed();
         }
 
         public async void pop3(object sender, EventArgs e)
@@ -45,8 +45,9 @@ namespace HydrationStationV1
             result2 += 1000;
             string myString = result2.ToString();
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(1000);
+            GlobalVariables.intakeForDay.updateIntake(1000);
             await PopupNavigation.PopAsync(true);
+            HomePage.popupClosed();
         }
 
 
@@ -59,8 +60,9 @@ namespace HydrationStationV1
 
             string myString = result2.ToString();
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(result);
+            GlobalVariables.intakeForDay.updateIntake(result);
             await PopupNavigation.PopAsync(true);
+            HomePage.popupClosed();
 
         }
     }

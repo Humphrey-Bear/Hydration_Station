@@ -2595,11 +2595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.Android/HydrationStationV1.Android.csproj",
+      "projectUniqueName": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.Android/HydrationStationV1.Android.csproj",
       "projectName": "HydrationStationV1.Android",
-      "projectPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.Android/HydrationStationV1.Android.csproj",
+      "projectPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.Android/HydrationStationV1.Android.csproj",
       "packagesPath": "/Users/lukehumphryes/.nuget/packages/",
-      "outputPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.Android/obj/",
+      "outputPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2614,8 +2614,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj": {
-              "projectPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj"
+            "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj": {
+              "projectPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj"
             }
           }
         }

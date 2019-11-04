@@ -17,24 +17,24 @@ namespace HydrationStationV1
     public partial class PopupView
     {
         public static int result2 { get; set; } = 0;
-        public WaterForDay waterIntakeForDay;
 
-        public PopupView(WaterForDay waterIntakeForDay)
+        public PopupView()
         {
             InitializeComponent();
             //var homePage = new HomePage();
             //var rootPage = new NavigationPage(homePage);
-            this.waterIntakeForDay = waterIntakeForDay;
         }
 
 
         public async void pop1(object sender, EventArgs e)
         {
+            GlobalVariables.intakeForDay.updateIntake(250);
             result2 += 250;
-            string myString = result2.ToString();
+            string myString = GlobalVariables.intakeForDay.getIntake().ToString();
+            System.Console.WriteLine("works");
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(250);
-            await PopupNavigation.PopAsync(true);
+            await PopupNavigation.Instance.PopAsync(true);
+            HomePage.popupClosed();
         }
 
         public async void pop2(object sender, EventArgs e)
@@ -43,8 +43,9 @@ namespace HydrationStationV1
             string myString = result2.ToString();
             yeet.Text = "" + myString;
             //volume.water += 500;
-            waterIntakeForDay.updateIntake(500);
-            await PopupNavigation.PopAsync(true);
+            GlobalVariables.intakeForDay.updateIntake(500);
+            await PopupNavigation.Instance.PopAsync(true);
+            HomePage.popupClosed();
         }
 
         public async void pop3(object sender, EventArgs e)
@@ -53,8 +54,9 @@ namespace HydrationStationV1
             string myString = result2.ToString();
             yeet.Text = "" + myString;
             //volume.water += 1000;
-            waterIntakeForDay.updateIntake(1000);
-            await PopupNavigation.PopAsync(true);
+            GlobalVariables.intakeForDay.updateIntake(1000);
+            await PopupNavigation.Instance.PopAsync(true);
+            HomePage.popupClosed();
         }
 
 
@@ -70,8 +72,9 @@ namespace HydrationStationV1
             //volume.water += result2;
             string myString = result2.ToString();
             yeet.Text = "" + myString;
-            waterIntakeForDay.updateIntake(result);
-            await PopupNavigation.PopAsync(true);
+            GlobalVariables.intakeForDay.updateIntake(result);
+            await PopupNavigation.Instance.PopAsync(true);
+            HomePage.popupClosed();
 
         }
     }

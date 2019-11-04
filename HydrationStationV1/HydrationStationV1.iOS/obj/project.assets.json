@@ -1897,11 +1897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.iOS/HydrationStationV1.iOS.csproj",
+      "projectUniqueName": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.iOS/HydrationStationV1.iOS.csproj",
       "projectName": "HydrationStationV1.iOS",
-      "projectPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.iOS/HydrationStationV1.iOS.csproj",
+      "projectPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.iOS/HydrationStationV1.iOS.csproj",
       "packagesPath": "/Users/lukehumphryes/.nuget/packages/",
-      "outputPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1.iOS/obj/",
+      "outputPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1916,8 +1916,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj": {
-              "projectPath": "/Users/lukehumphryes/QUT/IAB330/Assignment2/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj"
+            "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj": {
+              "projectPath": "/Users/lukehumphryes/QUT/IAB330/Hydration_Station/HydrationStationV1/HydrationStationV1/HydrationStationV1.csproj"
             }
           }
         }

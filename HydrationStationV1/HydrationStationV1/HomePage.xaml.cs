@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Rg.Plugins.Popup.Services;
 using HydrationStationV1.Models;
+using System.Threading;
 
 namespace HydrationStationV1
 {
@@ -15,7 +16,8 @@ namespace HydrationStationV1
     [DesignTimeVisible(false)]
     public partial class HomePage : ContentPage
     {
-        WaterForDay waterIntakeForDay = new WaterForDay();
+        private static bool popupFinished = false;
+        private readonly System.Threading.EventWaitHandle waitHandle = new System.Threading.AutoResetEvent(false);
 
         private string waterIntake;
         public string WaterIntake
@@ -25,6 +27,7 @@ namespace HydrationStationV1
             {
                 waterIntake = value;
                 OnPropertyChanged(nameof(WaterIntake)); // Notify that there was a change on this property
+                //System.Console.WriteLine("Water Intake Updated: " + waterIntake);
             }
         }
 
@@ -32,33 +35,89 @@ namespace HydrationStationV1
         {
 
             InitializeComponent();
+            WaterIntake = GlobalVariables.intakeForDay.getIntake().ToString();
             BindingContext = this;
-            WaterIntake = waterIntakeForDay.getIntake().ToString();
 
         }
 
-        private async void image1(object sender, EventArgs e)
+        private async void handlePopup(string popup)
         {
-            await PopupNavigation.Instance.PushAsync(new PopupView(waterIntakeForDay));
-            WaterIntake = waterIntakeForDay.getIntake().ToString();
+            var tokenSource2 = new CancellationTokenSource();
+            CancellationToken ct = tokenSource2.Token;
+
+            var task = Task.Run(() =>
+            {
+                //ct.ThrowIfCancellationRequested();
+
+                switch (popup)
+                {
+                    case "PopupView":
+                        PopupNavigation.Instance.PushAsync(new PopupView());
+                        break;
+                    case "PopupView1":
+                        PopupNavigation.Instance.PushAsync(new PopupView1());
+                        break;
+                    case "PopupView2":
+                        PopupNavigation.Instance.PushAsync(new PopupView2());
+                        break;
+                    case "PopupView3":
+                        PopupNavigation.Instance.PushAsync(new PopupView3());
+                        break;
+                }
+
+                Console.WriteLine("Working.");
+
+                while (popupFinished == false)
+                {
+                    WaterIntake = GlobalVariables.intakeForDay.getIntake().ToString();
+                    GlobalVariables.weekEntry.updateIntakeForDay(GlobalVariables.intakeForDay.getIntake(), DateTime.Now.DayOfWeek.ToString());
+                }
+            }, tokenSource2.Token); // Pass same token to Task.Run.
+
+            tokenSource2.Cancel();
+
+            try
+            {
+                await task;
+            }
+            catch (OperationCanceledException er)
+            {
+                Console.WriteLine($"{nameof(OperationCanceledException)} thrown with message: {er.Message}");
+            }
+            finally
+            {
+                popupFinished = false;
+                tokenSource2.Dispose();
+            }
         }
 
-        private async void image2(object sender, EventArgs e)
+        private void image1(object sender, EventArgs e)
         {
-            WaterIntake = waterIntakeForDay.getIntake().ToString();
-            await PopupNavigation.Instance.PushAsync(new PopupView1(waterIntakeForDay));
+            Console.WriteLine("Clicked");
+            handlePopup("PopupView");
         }
 
-        private async void image3(object sender, EventArgs e)
+        private void image2(object sender, EventArgs e)
         {
-            WaterIntake = waterIntakeForDay.getIntake().ToString();
-            await PopupNavigation.Instance.PushAsync(new PopupView2(waterIntakeForDay));
+            Console.WriteLine("Clicked");
+            handlePopup("PopupView1");
         }
 
-        private async void image4(object sender, EventArgs e)
+        private void image3(object sender, EventArgs e)
         {
-            WaterIntake = waterIntakeForDay.getIntake().ToString();
-            await PopupNavigation.Instance.PushAsync(new PopupView3(waterIntakeForDay));
+            Console.WriteLine("Clicked");
+            handlePopup("PopupView2");
+        }
+
+        private void image4(object sender, EventArgs e)
+        {
+            Console.WriteLine("Clicked");
+            handlePopup("PopupView3");
+        }
+
+        public static void popupClosed()
+        {
+            popupFinished = true;
         }
     }
 }
