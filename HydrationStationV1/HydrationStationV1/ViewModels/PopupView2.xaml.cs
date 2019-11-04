@@ -13,8 +13,6 @@ namespace HydrationStationV1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PopupView2
     {
-        public static int result2 { get; set; } = 0;
-
         public PopupView2()
         {
             InitializeComponent();
@@ -22,9 +20,6 @@ namespace HydrationStationV1
 
         public async void pop1(object sender, EventArgs e)
         {
-            result2 += 250;
-            string myString = result2.ToString();
-            yeet.Text = "" + myString;
             GlobalVariables.intakeForDay.updateIntake(250);
             await PopupNavigation.PopAsync(true);
             HomePage.popupClosed();
@@ -32,9 +27,6 @@ namespace HydrationStationV1
 
         public async void pop2(object sender, EventArgs e)
         {
-            result2 += 500;
-            string myString = result2.ToString();
-            yeet.Text = "" + myString;
             GlobalVariables.intakeForDay.updateIntake(500);
             await PopupNavigation.PopAsync(true);
             HomePage.popupClosed();
@@ -42,9 +34,6 @@ namespace HydrationStationV1
 
         public async void pop3(object sender, EventArgs e)
         {
-            result2 += 1000;
-            string myString = result2.ToString();
-            yeet.Text = "" + myString;
             GlobalVariables.intakeForDay.updateIntake(1000);
             await PopupNavigation.PopAsync(true);
             HomePage.popupClosed();
@@ -56,10 +45,7 @@ namespace HydrationStationV1
 
             string text = Amount.Text;
             int result = Int32.Parse(text);
-            result2 += result;
 
-            string myString = result2.ToString();
-            yeet.Text = "" + myString;
             GlobalVariables.intakeForDay.updateIntake(result);
             await PopupNavigation.PopAsync(true);
             HomePage.popupClosed();

@@ -25,12 +25,6 @@
             </maps:Map>
         </StackLayout>
     </ContentPage>
-    
-    <ContentPage Title="Reminders" >
-        <StackLayout HorizontalOptions="Center">
-            <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Place Reminders page here"/>
-        </StackLayout>
-    </ContentPage>
 
     <local:StatsPage Title="Stats"/>    
     

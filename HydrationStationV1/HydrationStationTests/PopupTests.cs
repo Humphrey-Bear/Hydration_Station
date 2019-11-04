@@ -1,15 +1,16 @@
+using HydrationStationV1;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HydrationStationTests
 {
     [TestClass]
-    public class HomePageTests
+    public class PopupTests
     {
         [TestMethod]
-        public void TestUpdateWaterIntake()
+        public void TestPopupSelection()
         {
 
-
+			PopupView testPopup = new PopupView();
         }
     }
 }

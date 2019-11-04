@@ -16,4 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\HydrationStationV1\HydrationStationV1.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="UnitTest1.cs" />
+    <Compile Remove="PopupTests.cs" />
+  </ItemGroup>
 </Project>

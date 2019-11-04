@@ -67,7 +67,7 @@
                Grid.Row="1"
                Grid.Column="2"
                Grid.ColumnSpan="2"/>
-        <ProgressBar Progress="0.7"
+        <ProgressBar Progress="{Binding WaterIntake}"
                      ProgressColor="Gray"
                      BackgroundColor="LightGray"
                      Grid.Row="3"

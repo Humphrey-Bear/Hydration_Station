@@ -18,7 +18,10 @@ namespace HydrationStationV1.Models
         //Updates the intake for the day.
         public void updateIntake(int volumeToAdd)
         {
-            intakeForDay += volumeToAdd;
+            if (volumeToAdd >= 0)
+            {
+                intakeForDay += volumeToAdd;
+            }
         }
 
         //Returns the volume of water consumed for day.
