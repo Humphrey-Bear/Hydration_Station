@@ -1,38 +1,39 @@
 ﻿<Properties StartupConfiguration="{164C66BD-D3FF-45E5-9E7D-8DD0ADBCC846}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HydrationStationV1/Models/WeekEntry.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets">
     <Files>
       <File FileName="HydrationStationV1/App.xaml" Line="1" Column="1" IsPinned="True" />
-      <File FileName="HydrationStationV1/StatsPage.xaml" />
-      <File FileName="HydrationStationV1/StatsPage.xaml.cs" />
-      <File FileName="HydrationStationV1/MainPage.xaml" />
-      <File FileName="HydrationStationV1/HomePage.xaml" />
+      <File FileName="HydrationStationV1/StatsPage.xaml" Line="14" Column="1" />
+      <File FileName="HydrationStationV1/StatsPage.xaml.cs" Line="19" Column="35" />
+      <File FileName="HydrationStationV1/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="HydrationStationV1/HomePage.xaml" Line="73" Column="34" />
       <File FileName="HydrationStationV1/App.xaml.cs" Line="1" Column="1" />
       <File FileName="HydrationStationV1/MainPage.xaml.cs" />
-      <File FileName="HydrationStationV1/HomePage.xaml.cs" />
+      <File FileName="HydrationStationV1/HomePage.xaml.cs" Line="58" Column="78" />
       <File FileName="HydrationStationV1/ViewModels/PopupView.xaml" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView.xaml.cs" Line="81" Column="2" />
       <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView1.xaml.cs" Line="64" Column="2" />
       <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView2.xaml.cs" Line="69" Column="2" />
       <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml" />
-      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml.cs" />
+      <File FileName="HydrationStationV1/ViewModels/PopupView3.xaml.cs" Line="69" Column="2" />
       <File FileName="HydrationStationV1.iOS/AppDelegate.cs" />
       <File FileName="HydrationStationV1.Android/MainActivity.cs" />
       <File FileName="HydrationStationV1/AssemblyInfo.cs" />
       <File FileName="HydrationStationV1/Models/GlobalVariables.cs" Line="1" Column="1" />
       <File FileName="HydrationStationV1/Models/Item.cs" Line="1" Column="1" />
-      <File FileName="HydrationStationV1/Models/WaterForDay.cs" Line="1" Column="1" />
-      <File FileName="HydrationStationV1/Models/WeekEntry.cs" Line="14" Column="26" />
+      <File FileName="HydrationStationV1/Models/WaterForDay.cs" Line="21" Column="41" />
+      <File FileName="HydrationStationV1/Models/WeekEntry.cs" Line="131" Column="33" />
+      <File FileName="HydrationStationTests/HomePageTests.cs" Line="12" Column="67" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" Line="293" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HydrationStationV1" expanded="True">
+            <Node name="HydrationStationTests" expanded="True" selected="True" />
             <Node name="HydrationStationV1" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="WeekEntry.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
