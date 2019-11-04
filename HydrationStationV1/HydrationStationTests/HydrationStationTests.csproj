@@ -16,7 +16,4 @@
   <ItemGroup>
     <ProjectReference Include="..\HydrationStationV1\HydrationStationV1.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="WaterForDayTests.cs" />
-  </ItemGroup>
 </Project>

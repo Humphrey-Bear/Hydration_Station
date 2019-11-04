@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{164C66BD-D3FF-45E5-9E7D-8DD0ADBCC846}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HydrationStationTests/WeekEntryTests.cs">
     <Files>
       <File FileName="HydrationStationV1/App.xaml" Line="1" Column="1" IsPinned="True" />
       <File FileName="HydrationStationV1/StatsPage.xaml" Line="14" Column="1" />
@@ -24,14 +24,17 @@
       <File FileName="HydrationStationV1/Models/Item.cs" Line="1" Column="1" />
       <File FileName="HydrationStationV1/Models/WaterForDay.cs" Line="21" Column="41" />
       <File FileName="HydrationStationV1/Models/WeekEntry.cs" Line="131" Column="33" />
-      <File FileName="HydrationStationTests/HomePageTests.cs" Line="12" Column="67" />
-      <File FileName="../../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" Line="293" Column="5" />
+      <File FileName="HydrationStationTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="HydrationStationTests/WaterForDayTests.cs" Line="12" Column="67" />
+      <File FileName="HydrationStationTests/WeekEntryTests.cs" Line="7" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HydrationStationV1" expanded="True">
-            <Node name="HydrationStationTests" expanded="True" selected="True" />
+            <Node name="HydrationStationTests" expanded="True">
+              <Node name="WeekEntryTests.cs" selected="True" />
+            </Node>
             <Node name="HydrationStationV1" expanded="True">
               <Node name="Models" expanded="True" />
             </Node>
